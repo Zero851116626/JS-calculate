@@ -1,0 +1,42 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  list-style: none;
+}
+#wrap {
+  width: 320px;
+  height: 340px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: pink;
+  background: url("../images/heiheihei.jpg") no-repeat;
+}
+#wrap .screen {
+  width: 315px;
+  height: 60px;
+  border: 0px;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#wrap li {
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 60px;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: rgb(144, 144, 144);
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  cursor: pointer;
+}
+#wrap li:nth-child(3n) {
+  margin-right: 5px;
+}

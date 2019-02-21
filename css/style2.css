@@ -1,0 +1,98 @@
+@charset "UTF=8";
+div,
+input,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  list-style: none;
+  cursor: pointer;
+}
+li {
+  postion: relative;
+}
+body {
+  background-color: #EEE;
+}
+h2 {
+  font-size: 30px;
+}
+.note {
+  width: 500px;
+  margin: 0px auto;
+}
+.note p:nth-of-type(3) {
+  color: red;
+}
+#wrap {
+  width: 450px;
+  height: 325px;
+  margin: 50px auto 0px;
+  background: url(../images/6345.jpg);
+  padding: 15px 25px 5px;
+}
+#wrap input {
+  float: left;
+  width: 445px;
+  height: 50px;
+  padding-right: 5px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  border: 0px;
+  opacity: 0.5;
+}
+#wrap .signs {
+  float: left;
+  width: 450px;
+  height: 50px;
+  margin-top: 5px;
+}
+#wrap .signs li {
+  float: left;
+  width: 85px;
+  height: 48px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 5.5px;
+  background-color: #eee;
+  opacity: 0.5;
+}
+#wrap .signs li:hover {
+  transform: translateY(-2px);
+  background-color: #FFF;
+  opacity: 1.2;
+}
+#wrap .signs li:first-child {
+  margin-left: 0px;
+}
+#wrap .num {
+  float: left;
+  width: 450px;
+  height: 200px;
+}
+#wrap .num li {
+  float: left;
+  width: 145px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 7.5px;
+  background-color: #eee;
+  opacity: 0.5;
+}
+#wrap .num li:hover {
+  transform: translateY(-2px);
+  background-color: #FFF;
+  opacity: 1.2;
+}
+#wrap .num li:nth-child(3n+1) {
+  margin-left: 0PX;
+}

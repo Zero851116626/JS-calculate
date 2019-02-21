@@ -1,0 +1,57 @@
+@charset "utf-8";
+@MG:margin;
+@PD:padding;
+@W:width;
+@H:height;
+@BGC:background-color;
+@L-S:list-style;
+@FL:float;
+@MG-L:margin-left;
+@MG-R:margin-right;
+@MG-T:margin-top;
+@T-A:text-align;
+@L-H:line-height;
+@C:color;
+@F-Z:font-size;
+@BD:border;
+@PD-R:padding-right;
+@BG:background;
+@BG-S:background-size;
+
+
+*{@{MG}:0px;@{PD}:0px;}
+ul,li{
+    @{L-S}:none;
+}
+#wrap{
+    @{W}:320px;
+    @{H}:340px;
+    @{MG}:100px auto;
+    @{PD}:10px;
+    @{BGC}:pink;
+    @{BG}:url("../images/heiheihei.jpg") no-repeat;
+    .screen{
+        @{W}:315px;
+        @{H}:60px;
+        @{BD}:0px;
+        @{F-Z}:40px;
+        @{T-A}:right;
+        @{PD-R}:5px;
+        @{BGC}:rgba(255,255,255,.6);
+    }
+    li{
+        @{FL}:left;
+        @{W}:100px;
+        @{H}:50px;
+        @{L-H}:60px;
+        @{F-Z}:22px;
+        @{MG-T}:5px;
+        @{MG-L}:5px;
+        @{C}:#aaa;
+        @{BGC}:rgba(255,255,255,.6);
+        @{T-A}:center;
+    }
+    li:nth-child(3n){
+        @{MG-R}:5px;
+    }
+}

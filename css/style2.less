@@ -1,0 +1,118 @@
+@charset "UTF=8";
+@MG:margin;
+@PD:padding;
+@W:width;
+@H:height;
+@BGC:background-color;
+@L-S:list-style;
+@FL:float;
+@MG-L:margin-left;
+@MG-R:margin-right;
+@MG-T:margin-top;
+@T-A:text-align;
+@L-H:line-height;
+@C:color;
+@F-Z:font-size;
+@BD:border;
+@PD-R:padding-right;
+@BG:background;
+@BG-S:background-size;
+@VTC-A:vertical-align;
+@OPCT:opacity;
+@CS:cursor;
+@PST:postion;
+@TSF:transform;
+
+div,input, ul,li,p{
+    @{MG}:0px;
+    @{PD}:0px;
+}
+ul,li{
+    @{L-S}:none;
+    @{CS}: pointer;
+}
+li{
+    @{PST}:relative;
+}
+body{
+    @{BGC}:#EEE;
+}
+h2{
+    @{F-Z}:30px;
+}
+.note{
+    @{W}:500px;
+    @{MG}:0px auto;
+    p:nth-of-type(3){
+        color: red;
+    }
+}
+#wrap{
+    @{W}:450px;
+    @{H}:325px;
+    @{MG}:50px auto 0px;
+    @{BG}:url(../images/6345.jpg);
+    @{PD}:15px 25px 5px;
+    input{
+        @{FL}:left;
+        @{W}:445px;
+        @{H}:50px;
+        @{PD-R}:5px;
+        @{F-Z}:40px;
+        @{L-H}:50px;
+        @{T-A}:right;
+        @{BD}:0px;
+        @{OPCT}:0.5;
+    }
+    .signs{
+        @{FL}:left;
+        @{W}:450px;
+        @{H}:50px;
+        @{MG-T}:5px;
+        li{
+            @{FL}:left;
+            @{W}:85px;
+            @{H}:48px;
+            @{L-H}:50px;
+            @{T-A}:center;
+            @{F-Z}:30px;
+            @{MG-L}:5.5px;
+            @{BGC}:#eee;
+            @{OPCT}:0.5;
+            &:hover{
+                @{TSF}:translateY(-2px);
+                @{BGC}:#FFF;
+                @{OPCT}:1.2;
+            }
+        }
+        li:first-child{
+            @{MG-L}:0px;
+        }
+        
+    }
+    .num{
+        @{FL}:left;
+        @{W}:450px;
+        @{H}:200px;
+        li{
+            @{FL}:left;
+            @{W}:145px;
+            @{H}:48px;
+            @{L-H}:48px;
+            @{T-A}:center;
+            @{F-Z}:30px;
+            @{MG-T}:5px;
+            @{MG-L}:7.5px;
+            @{BGC}:#eee;
+            @{OPCT}:0.5;
+            &:hover{
+                @{TSF}:translateY(-2px);
+                @{BGC}:#FFF;
+                @{OPCT}:1.2;
+            }
+        }
+        li:nth-child(3n+1){
+            @{MG-L}:0PX;
+        }
+    }
+}
